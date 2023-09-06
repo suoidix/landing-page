@@ -14,7 +14,7 @@ body {
     background-color: #1F2937;
     align-items: center;
     padding: 16px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer {
@@ -86,8 +86,16 @@ ul {
     border-radius: 4px;
     padding: 16px;
     margin: 16px;
-    width: 200px;
+    max-width: 500px;
+    transition:transform 0.25s ease;
+    background: #1f2937;
 }
+
+.card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+  }
 
 .title {
     font-size: 48px;
@@ -115,6 +123,9 @@ button {
     color: white;
 }
 
+button:hover {
+    background: #005da3;
+}
 .banner {
     display: flex;
     background-color:#3882F6;
@@ -125,6 +136,18 @@ button {
     color: #eee;
     font-style: none;
 }
-.banner button {
+
+.section4 button {
     border: 1px #eee;
+    background: #eee;
+    border: 1px #3882F6;
+    color: #3882F6;
+}
+.section4 button:hover {
+    background: rgb(209, 209, 209);
+}
+
+.section2 img {
+    max-width: 100%;
+    height: auto;
 }
