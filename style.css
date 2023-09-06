@@ -55,9 +55,6 @@ ul {
 }
 
 .section2, .section4 {
-    background-color: #F9FAF8;
-    font-size: 36px;
-    color: #1f2937;
     gap: 8px;
 }
 
@@ -66,6 +63,12 @@ ul {
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
+    flex-direction: column;
+}
+
+.author {
+    font-size: 24px;
+    margin-left:300px;
 }
 
 .cards {
@@ -84,18 +87,20 @@ ul {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
-    padding: 16px;
+    padding: 5px;
     margin: 16px;
     max-width: 500px;
     transition:transform 0.25s ease;
     background: #1f2937;
+    display: flex;
 }
 
 .card:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
     -webkit-transform:scale(1.5); /* or some other value */
     transform:scale(1.5);
-  }
+    transition-delay:.25s;
+}​
 
 .title {
     font-size: 48px;
@@ -105,10 +110,11 @@ ul {
 }
 
 .description {
-    font-size: 18px;
+    font-size: 16px;
     flex: 1;
     flex-direction: column;
-    padding: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     margin: 0px;
     width: 420px;
     font-weight: normal;
@@ -126,6 +132,7 @@ button {
 button:hover {
     background: #005da3;
 }
+
 .banner {
     display: flex;
     background-color:#3882F6;
@@ -135,6 +142,7 @@ button:hover {
     align-items: center;
     color: #eee;
     font-style: none;
+    padding-right: 8px;
 }
 
 .section4 button {
@@ -143,6 +151,7 @@ button:hover {
     border: 1px #3882F6;
     color: #3882F6;
 }
+
 .section4 button:hover {
     background: rgb(209, 209, 209);
 }
@@ -150,4 +159,16 @@ button:hover {
 .section2 img {
     max-width: 100%;
     height: auto;
+}
+.title2 {
+    font-weight: bold;
+    padding: 8px;
+}
+
+.title2, .description2 {
+    font-size: 14px;
+}
+
+.title2 .description2 {
+    font-weight: normal;
 }
