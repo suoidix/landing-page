@@ -1,5 +1,5 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: roboto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -57,7 +57,6 @@ ul {
 .section2, .section4 {
     background-color: #F9FAF8;
     font-size: 36px;
-    font-style: italic;
     color: #1f2937;
     gap: 8px;
 }
@@ -102,4 +101,18 @@ button {
     background: #3882F6;
     border: 1px #3882F6;
     color: white;
+}
+
+.banner {
+    display: flex;
+    background-color:#3882F6;
+    height: 100px;
+    width: 700px;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+    font-style: none;
+}
+.banner button {
+    border: 1px #eee;
 }
