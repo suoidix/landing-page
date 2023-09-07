@@ -7,6 +7,11 @@ body {
     flex: 1;
 }
 
+a {
+    text-decoration: inherit;
+    color: inherit;;
+}
+
 .header, .footer {
     color: #F9FAF8;
     display: flex;
@@ -24,6 +29,7 @@ body {
 .left-side {
     font-size: 24px;
     padding: 0px;
+    font-weight: bold;
 }
 
 ul {
@@ -47,6 +53,7 @@ ul {
     align-items: center;
     padding: 8px;
 }
+
 .section1 {
     background-color: #1F2937;
     font-size: 24px;
@@ -109,24 +116,22 @@ ul {
     -webkit-transform:scale(1.5); /* or some other value */
     transform:scale(1.5);
     transition-delay:.25s;
-}​
+}
 
 .title {
-    font-size: 48px;
     flex-direction: column;
-    width: 420px;
+    font-weight: bold;
+    font-size: 38px;
     font-weight: bold;
 }
 
 .description {
     font-size: 16px;
-    flex: 1;
-    flex-direction: column;
     padding-top: 8px;
     padding-bottom: 8px;
     margin: 0px;
-    width: 420px;
-    font-weight: normal;
+    width: 100%;
+    max-width: 420px;
 }
 
 button {
@@ -142,11 +147,13 @@ button:hover {
     background: #005da3;
 }
 
-.banner {
+.banner-bottom {
     display: flex;
     background-color:#3882F6;
     height: 100px;
-    width: 700px;
+    width: 100%;
+    max-height: 100%;
+    max-width: 700px;
     justify-content: space-around;
     align-items: center;
     color: #eee;
@@ -178,6 +185,6 @@ button:hover {
     font-size: 14px;
 }
 
-.title2 .description2 {
+.description2 {
     font-weight: normal;
 }
